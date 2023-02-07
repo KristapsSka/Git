@@ -30,6 +30,13 @@
         "metadata": {
           "description": "The SKU of App Service Plan."
         }
+      },
+      "repoUrl": {
+        "type": "string",
+        "defaultValue": " ",
+        "metadata": {
+          "description": "Optional Git Repo URL"
+        }
       }
 
       },
