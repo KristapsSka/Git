@@ -43,10 +43,9 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/arm-deploy@v1
+      id: deploy
       with:
-        resourceGroupName: github-action-arm-rg
-        template: ./azuredeploy.json
-        parameters: examples/template/parameters.json storageAccountType=Standard_LRS sqlServerPassword=${{ secrets.SQL_SERVER }}
-        additionalArguments: "--what-if --rollback-on-error --what-if-exclude-change-types Create Ignore"
+        resourceGroupName: bootcamp-resources
+        template: ./infrastructure/webapp.json
    
 
