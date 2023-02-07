@@ -48,7 +48,7 @@ jobs:
         id: deploy
         with:
           resourceGroupName: bootcamp-resources
-          template: src/infrastructure/webapp.json
+          template: ./infrastructure/webapp.json
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
